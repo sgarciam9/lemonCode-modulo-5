@@ -1,0 +1,26 @@
+<header class="header">
+  <div class="brand">
+    <img src="assets/logo.svg" alt="Logo" />
+    <span class="logo-text">Angular App</span>
+  </div>
+
+  <!-- MENÚ PÚBLICO -->
+  <nav *ngIf="!authService.isLogged()">
+    <a routerLink="/">Home</a>
+    <a routerLink="/login">Login</a>
+    <a routerLink="/about">About</a>
+  </nav>
+
+  <!-- MENÚ PRIVADO -->
+  <nav *ngIf="authService.isLogged()">
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/gallery">Gallery</a>
+    <a routerLink="/crud">CRUD</a>
+    <a routerLink="/profile">Profile</a>
+  </nav>
+
+  <div *ngIf="authService.isLogged()" class="user">
+    <span>{{ authService.getUsername() }}</span>
+    <button mat-button color="warn" (click)="logout()">Logout</button>
+  </div>
+</header>
