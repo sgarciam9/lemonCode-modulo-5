@@ -1,59 +1,51 @@
-# AngularLayoutApp
+  ## Módulo Angular – Laboratorio Obligatorio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.5.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🧭 Páginas disponibles
 
-```bash
-ng serve
-```
+### Menú público (usuario NO logueado)
+- Home (`/`)
+- Login (`/login`)
+- About (`/about`)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Menú privado (usuario logueado)
+- Dashboard (`/dashboard`)
+- Gallery (`/gallery`)
+- CRUD (`/crud`)
+- Profile (`/profile`)
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🔐 Autenticación
 
-```bash
-ng generate component component-name
-```
+La aplicación utiliza un **servicio de autenticación simulado** (`AuthService`) que gestiona el estado del usuario en memoria.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Credenciales válidas
 
-```bash
-ng generate --help
-```
+Username: master@lemoncode.net
 
-## Building
+Password: 12345678
 
-To build the project run:
 
-```bash
-ng build
-```
+## ▶️ Cómo ejecutar el proyecto
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### 1️⃣ Instalar dependencias
 
-## Running unit tests
+Desde la raíz del proyecto:
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+`npm install`
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+### 2️⃣ Arrancar el servidor de desarrollo
 
-For end-to-end (e2e) testing, run:
+`ng serve`
 
-```bash
-ng e2e
-```
+La aplicación estará disponible en:
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+`http://localhost:4200`
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
