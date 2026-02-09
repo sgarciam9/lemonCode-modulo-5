@@ -1,4 +1,4 @@
-# 🏡 Casas Rurales - Laboratorio MetaFrameworks
+# 🏡 Casas Rurales - Versión Next.js
 
 Aplicación web para buscar y alquilar casas rurales en España, desarrollada con **Next.js 15**, **TypeScript** y **Tailwind CSS**.
 

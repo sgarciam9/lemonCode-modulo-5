@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Next.js (casas-rurales)
+casas-rurales/.next/
+casas-rurales/out/
+casas-rurales/.turbo/
+
+# Nuxt (nuxt)
+nuxt/.nuxt/
+nuxt/.output/
+nuxt/dist/
+
+# API Server
+master-frontend-metaframeworks-lab/api-server/node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+coverage/
+
+# Misc
+*.tsbuildinfo
+.eslintcache
