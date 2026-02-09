@@ -6,8 +6,8 @@ Este proyecto implementa una aplicación de alquiler de casas rurales utilizando
 
 ```
 lemonCode-modulo-5/
-├── casas-rurales/          # Implementación con Next.js
-├── nuxt/                   # Implementación con Nuxt
+├── casas-rurales-next.js/  # Implementación con Next.js
+├── casas-rurales-nuxt/     # Implementación con Nuxt
 ├── master-frontend-metaframeworks-lab/  # API Server (mock)
 └── README.md              # Este archivo
 ```
@@ -20,7 +20,7 @@ lemonCode-modulo-5/
 - **Estilos:** Tailwind CSS 4
 - **Puerto:** http://localhost:3000
 - **Estrategia de Rendering:** SSR (Server-Side Rendering)
-- **Carpeta:** `casas-rurales/`
+- **Carpeta:** `casas-rurales-next.js/`
 
 ### 2. Nuxt (Vue-based)
 - **Framework:** Nuxt 3
@@ -28,7 +28,7 @@ lemonCode-modulo-5/
 - **Estilos:** Tailwind CSS (módulo @nuxtjs/tailwindcss)
 - **Puerto:** http://localhost:3002
 - **Estrategia de Rendering:** SSR (Server-Side Rendering)
-- **Carpeta:** `nuxt/`
+- **Carpeta:** `casas-rurales-nuxt/`
 
 ## 🔧 Instalación y Ejecución
 
@@ -46,7 +46,7 @@ npm start
 
 ### 2. Ejecutar Next.js
 ```bash
-cd casas-rurales
+cd casas-rurales-next.js
 npm install
 npm run dev
 # Abre http://localhost:3000
@@ -54,7 +54,7 @@ npm run dev
 
 ### 3. Ejecutar Nuxt
 ```bash
-cd nuxt
+cd casas-rurales-nuxt
 npm install
 npm run dev
 # Abre http://localhost:3002
@@ -115,7 +115,7 @@ Ambas implementaciones utilizan **SSR (Server-Side Rendering)** porque:
 
 ### Next.js
 ```
-casas-rurales/
+casas-rurales-next.js/
 ├── app/
 │   ├── page.tsx                  # Listado (/)
 │   ├── casas/[id]/
@@ -134,7 +134,7 @@ casas-rurales/
 
 ### Nuxt
 ```
-nuxt/
+casas-rurales-nuxt/
 ├── pages/
 │   ├── index.vue                 # Listado (/)
 │   └── houses/[id].vue           # Detalle (/houses/:id)
